@@ -1,0 +1,41 @@
+a {
+    color: #472063;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  
+  .half-column {
+    display: inline-block;
+    width:40%;
+    padding:10*$sizeTwo $sizeZero 2*$sizeTwo 4*$sizeTwo ;
+  }
+
+  .landing-copy { margin-left: 14*$sizeTwo ;
+    p {
+    @include fontSize(1.3em,1.4em )
+    }
+    h1 {
+    @include fontSize(3em,1.2em )
+    }
+
+    .cta-button {
+      border: 2px solid $colorWhite;
+      border-radius: 10*$sizeTwo ;
+      background-color:$colorPink;
+      color: $colorWhite;
+      font-weight: 700;
+      padding: $sizeTwo 4*$sizeTwo ;
+      &:hover {
+        background-color:$colorPink;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  .right {
+    float: right;
+  }
